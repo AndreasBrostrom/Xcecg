@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="libraries.xsd">
+
+  <!--  activate large traders when they get working storage, DONE
+        activate large mining ships when drones make it in,   DONE
+                and when the ships can handle them.           DONE
+      activate <environment buildatshipyard="true"/> when the new shipyards are in.                    DONE, Bottleneck is now in the economy where it belongs. Factions need shipyards, and/or (maybe better) a means for factions without shipyards to get ships.
+      switch large traders and miners back to trading when the new drone launching and docking are in. DONE
+        verify that trading and mining ships work after new drone launching and docking are in.        DONE
+        kill the dockanddie jobs when trading and mining ships work.                                   DONE -->
+
+  <!-- CONCEPT: overextension. absolute limits are set in the galaxy quota - a faction will never build and deploy more than this number of this job.
+          if a job's galaxy quota is set equal to the faction's starting number of the relevant space type,
+            that leaves no space for expansion
+            thus overextending immediately upon conquering more space.
+
+          defining some point at which a faction overextends can be set by changing the galaxy quota of jobs
+            relative to starting conditions,
+            and relative to total number of spaces.
+          for effectively no risk of overextension, set to total number of that space type in the galaxy.
+
+          some additional complexity is available by keeping track of front line spaces vs border spaces vs internal spaces.
+
+          At the moment, jobs are mostly set to have enough numbers to cover only the space that they start with, this coverage stretching as the faction expands.
+          Jobs marked _exp can expand past the faction's starting territory, but only up to a point. These allow a faction to expand to a point largely defined here.
+            Nature of reinforcement resulting from expansion is also largely defined by these jobs.
+          Jobs marked _comp are capable of occupying a relatively small volume of space in numbers that are more significant than normal.
+            These tend to resist compression, tending to concentrate as a faction contracts.
+
+      Totals:
+        Clusters: 47 (33)
+        Sectors: 60 (44)
+        Zones: 396 (162) -->
+
+  <job id="argon_consumergoods_trader_s" name="{20204,10011}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="Middleman" default="true">
+        <param name="range" value="3"/>
+      </order>
+    </orders>
+    <basket basket="consumergoods"/>
+    <category faction="argon" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="argon" relation="ally" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="argon" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0.3" max="0.7"/>
+      </loadout>
+      <owner exact="argon" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="antigone_consumergoods_trader_s" name="{20204,10011}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="Middleman" default="true">
+        <param name="range" value="3"/>
+      </order>
+    </orders>
+    <basket basket="consumergoods"/>
+    <category faction="antigone" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="ally" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="antigone" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0.3" max="0.7"/>
+      </loadout>
+      <owner exact="antigone" overridenpc="true"/>
+    </ship>
+  </job>
+  
+  <job id="paranid_consumergoods_trader_s" name="{20204,10011}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="Middleman" default="true">
+        <param name="range" value="5"/>
+      </order>
+    </orders>
+    <basket basket="consumergoods"/>
+    <category faction="paranid" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="paranid" relation="ally" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="paranid" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0.3" max="0.7"/>
+      </loadout>
+      <owner exact="paranid" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="holyorder_consumergoods_trader_s" name="{20204,10011}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="Middleman" default="true">
+        <param name="range" value="5"/>
+      </order>
+    </orders>
+    <basket basket="consumergoods"/>
+    <category faction="holyorder" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="holyorder" relation="ally" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="holyorder" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0.3" max="0.7"/>
+      </loadout>
+      <owner exact="holyorder" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="trinity_consumergoods_trader_s" name="{20204,10011}" startactive="false">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="Middleman" default="true">
+        <param name="range" value="5"/>
+      </order>
+    </orders>
+    <basket basket="consumergoods"/>
+    <category faction="trinity" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="8" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="trinity" relation="ally" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="trinity" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0.3" max="0.7"/>
+      </loadout>
+      <owner exact="trinity" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="teladi_consumergoods_trader_s" name="{20204,10011}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="Middleman" default="true">
+        <param name="range" value="5"/>
+      </order>
+    </orders>
+    <basket basket="consumergoods"/>
+    <category faction="teladi" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="teladi" relation="ally" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="teladi" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0.3" max="0.7"/>
+      </loadout>
+      <owner exact="teladi" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="ministry_consumergoods_trader_s" name="{20204,10011}">
+    <modifiers rebuild="false" commandeerable="true"/>
+    <orders>
+      <order order="Middleman" default="true">
+        <param name="range" value="5"/>
+      </order>
+    </orders>
+    <basket basket="consumergoods"/>
+    <category faction="ministry" tags="[factionlogic, freighter, trader]" size="ship_s"/>
+    <quota galaxy="5" sector="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro" faction="teladi" relation="ally" comparison="ge"/>
+    <environment buildatshipyard="true"/>
+    <ship>
+      <select faction="ministry" tags="[trader, container]" size="ship_s"/>
+      <loadout>
+        <level min="0.3" max="0.7"/>
+      </loadout>
+      <owner exact="ministry" overridenpc="true"/>
+    </ship>
+  </job>
+</jobs>

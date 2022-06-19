@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<god xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="libraries.xsd"> 
+  <products>
+    <product id="arg_consumergoods" ware="consumergoods" owner="argon" type="factory">
+      <quotas>
+        <quota galaxy="22" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[argon, hatikvah]" relation="self" comparison="ge">
+        <economy max="0.75" maxbound="false" />
+      </location>
+      <module>
+        <select ware="consumergoods" race="argon"/>
+      </module>
+    </product>
+
+    <product id="ant_consumergoods" ware="consumergoods" owner="antigone" type="factory">
+      <quotas>
+        <quota galaxy="16" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="antigone" relation="self" comparison="ge">
+        <economy max="0.75" maxbound="false" />
+      </location>
+      <module>
+        <select ware="consumergoods" race="argon"/>
+      </module>
+    </product>
+
+    <product id="par_consumergoods" ware="consumergoods" owner="paranid" type="factory">
+      <quotas>
+        <quota galaxy="20" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[paranid, alliance]" relation="self" comparison="ge" />
+      <module>
+        <select ware="consumergoods" race="paranid"/>
+      </module>
+    </product>
+
+    <product id="hol_consumergoods" ware="consumergoods" owner="holyorder" type="factory">
+      <quotas>
+        <quota galaxy="17" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[holyorder, alliance]" relation="self" comparison="ge" />
+      <module>
+        <select ware="consumergoods" race="paranid"/>
+      </module>
+    </product>
+
+    <product id="tel_consumergoods" ware="consumergoods" owner="teladi" type="factory">
+      <quotas>
+        <quota galaxy="30" />
+      </quotas>
+      <location class="galaxy" macro="xu_ep2_universe_macro" faction="[teladi, scaleplate]" relation="self" comparison="ge">
+        <economy max="0.75" maxbound="false" />
+      </location>
+      <module>
+        <select ware="consumergoods" race="teladi"/>
+      </module>
+    </product>
+  </products>
+</god>

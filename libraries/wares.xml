@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wares>
+  <ware id="consumergoods" name="{20201,2101}" description="{20201,2102}" factoryname="{20201,2104}" group="pharmaceutical" transport="container" volume="2" tags="container economy">
+    <price min="43" average="66" max="89" />
+    <production time="300" amount="208" method="default" name="{20206,201}">
+      <primary>
+        <ware ware="energycells" amount="100" />
+        <ware ware="refinedmetals" amount="40" />
+        <ware ware="microchips" amount="5" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.28" />
+      </effects>
+    </production>
+    <production time="300" amount="208" method="paranid" name="{20206,301}">
+      <primary>
+        <ware ware="energycells" amount="100" />
+        <ware ware="refinedmetals" amount="40" />
+        <ware ware="microchips" amount="5" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.28" />
+      </effects>
+    </production>
+    <production time="300" amount="208" method="teladi" name="{20206,401}">
+      <primary>
+        <ware ware="energycells" amount="100" />
+        <ware ware="refinedmetals" amount="40" />
+        <ware ware="microchips" amount="5" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.28" />
+      </effects>
+    </production>
+    <icon active="ware_consumergoods" video="ware_consumergoods_macro" />
+  </ware>
+  
+  <ware id="module_arg_prod_consumergoods_01" name="{20104,11601}" description="{20104,11602}" transport="container" volume="1" tags="module">
+    <price min="1223505" average="1439418" max="1655331" />
+    <production time="739" amount="1" method="default" name="{20206,201}">
+      <primary>
+        <ware ware="claytronics" amount="225" />
+        <ware ware="energycells" amount="450" />
+        <ware ware="hullparts" amount="823" />
+      </primary>
+    </production>
+    <research time="10">
+      <research>
+        <ware ware="research_module_production" />
+      </research>
+    </research>
+    <component ref="prod_arg_consumergoods_macro" amount="1" />
+    <restriction licence="station_gen_basic" />
+    <owner faction="argon" />
+  </ware>
+
+  <ware id="module_par_prod_consumergoods_01" name="{20104,11701}" description="{20104,11702}" transport="container" volume="1" tags="module">
+    <price min="1229080" average="1445976" max="1662872" />
+    <production time="739" amount="1" method="default" name="{20206,301}">
+      <primary>
+        <ware ware="claytronics" amount="226" />
+        <ware ware="energycells" amount="451" />
+        <ware ware="hullparts" amount="827" />
+      </primary>
+    </production>
+    <research time="10">
+      <research>
+        <ware ware="research_module_production" />
+      </research>
+    </research>
+    <component ref="prod_par_consumergoods_macro" amount="1" />
+    <restriction licence="station_gen_basic" />
+    <owner faction="holyorder" />
+    <owner faction="paranid" />
+    <owner faction="trinity" />
+  </ware>
+
+  <ware id="module_tel_prod_consumergoods_01" name="{20104,11801}" description="{20104,11802}" transport="container" volume="1" tags="module">
+    <price min="1219233" average="1434392" max="1649551" />
+    <production time="738" amount="1" method="default" name="{20206,401}">
+      <primary>
+        <ware ware="claytronics" amount="224" />
+        <ware ware="energycells" amount="448" />
+        <ware ware="hullparts" amount="822" />
+      </primary>
+    </production>
+    <research time="10">
+      <research>
+        <ware ware="research_module_production" />
+      </research>
+    </research>
+    <component ref="prod_tel_consumergoods_macro" amount="1" />
+    <restriction licence="station_gen_basic" />
+    <owner faction="ministry" />
+  </ware>
+</wares>

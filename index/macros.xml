@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <entry name="prod_tel_consumergoods_macro" value="assets\structures\production\macros\prod_tel_consumergoods_macro" />
+  <entry name="prod_par_consumergoods_macro" value="assets\structures\production\macros\prod_par_consumergoods_macro" />
+  <!-- <entry name="props_adsign_gen_consumergoods_macro" value="assets\props\adsigns\macros\props_adsign_gen_consumergoods_macro" /> -->
+  <entry name="ware_consumergoods_macro" value="assets\wares\macros\ware_consumergoods_macro" />
+</index>

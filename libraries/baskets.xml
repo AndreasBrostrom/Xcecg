@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<baskets>
+
+  <!-- Single Ware Baskets -->
+  <basket id="consumergoods">
+    <wares>
+      <ware ware="consumergoods" />
+    </wares>
+  </basket>
+
+  <basket id="food" name="Food Wares" description="Basket for all tradable food-level wares">
+    <wares>
+      <ware ware="foodrations" />
+      <ware ware="medicalsupplies" />
+      <ware ware="consumergoods" />
+      <ware ware="sojahusk" />
+      <ware ware="nostropoil" />
+      <ware ware="water" />
+    </wares>
+  </basket>
+
+  <basket id="food_argon" name="Argon Food Wares" description="Basket for all tradable Argon food-level wares">
+    <wares>
+      <ware ware="foodrations" />
+      <ware ware="medicalsupplies" />
+      <ware ware="consumergoods" />
+    </wares>
+  </basket>
+
+  <basket id="food_paranid" name="Paranid Food Wares" description="Basket for all tradable Paranid food-level wares">
+    <wares>
+      <ware ware="medicalsupplies" />
+      <ware ware="consumergoods" />
+      <ware ware="sojahusk" />
+    </wares>
+  </basket>
+
+  <basket id="food_teladi" name="Teladi Food Wares" description="Basket for all tradable Teladi food-level wares">
+    <wares>
+      <ware ware="medicalsupplies" />
+      <ware ware="consumergoods" />
+      <ware ware="nostropoil" />
+    </wares>
+  </basket>
+
+  <!-- Ware Group Baskets -->
+  <basket id="pirate_container" name="Valuables" description="Basket for all container wares worth at least as much as medical supplies and are not minable">
+    <wares>
+      <ware ware="advancedelectronics" />
+      <ware ware="antimattercells" />
+      <ware ware="antimatterconverters" />
+      <ware ware="advancedcomposites" />
+      <ware ware="claytronics" />
+      <ware ware="dronecomponents" />
+      <!--<ware ware="energycells" />-->
+      <ware ware="engineparts" />
+      <ware ware="fieldcoils" />
+      <ware ware="foodrations" />
+      <ware ware="graphene" />
+      <ware ware="hullparts" />
+      <ware ware="majadust" />
+      <!--<ware ware="majasnails" />-->
+      <!--<ware ware="meat" />-->
+      <!-- reference ware -->
+      <ware ware="medicalsupplies" />
+      <ware ware="consumergoods" />
+      <ware ware="microchips" />
+      <ware ware="missilecomponents" />
+      <!--<ware ware="nividium" />-->
+      <!--<ware ware="ore" />-->
+      <ware ware="plasmaconductors" />
+      <ware ware="quantumtubes" />
+      <ware ware="refinedmetals" />
+      <ware ware="scanningarrays" />
+      <ware ware="shieldcomponents" />
+      <!--<ware ware="silicon" />-->
+      <ware ware="siliconwafers" />
+      <ware ware="smartchips" />
+      <!--<ware ware="sojabeans" />-->
+      <!--<ware ware="sojahusk" />-->
+      <ware ware="spaceweed" />
+      <!--<ware ware="spices" />-->
+      <ware ware="sunriseflowers" />
+      <ware ware="superfluidcoolant" />
+      <ware ware="swampplant" />
+      <ware ware="teladianium" />
+      <ware ware="turretcomponents" />
+      <ware ware="weaponcomponents" />
+      <!--<ware ware="wheat" />-->
+    </wares>
+  </basket>
+
+  <!-- TEST / TEMP -->
+  <basket id="all" name="All Wares" description="Basket for all kinds of wares">
+    <wares>
+      <ware ware="advancedelectronics" />
+      <ware ware="antimattercells" />
+      <ware ware="antimatterconverters" />
+      <ware ware="advancedcomposites" />
+      <ware ware="claytronics" />
+      <ware ware="dronecomponents" />
+      <ware ware="energycells" />
+      <ware ware="engineparts" />
+      <ware ware="fieldcoils" />
+      <ware ware="foodrations" />
+      <ware ware="graphene" />
+      <ware ware="helium" />
+      <ware ware="hullparts" />
+      <ware ware="hydrogen" />
+      <ware ware="ice" />
+      <ware ware="majadust" />
+      <ware ware="majasnails" />
+      <ware ware="meat" />
+      <ware ware="medicalsupplies" />
+      <ware ware="consumergoods" />
+      <ware ware="methane" />
+      <ware ware="microchips" />
+      <ware ware="missilecomponents" />
+      <!--<ware ware="nividium" />-->
+      <ware ware="nostropoil" />
+      <ware ware="ore" />
+      <ware ware="plasmaconductors" />
+      <ware ware="quantumtubes" />
+      <ware ware="refinedmetals" />
+      <ware ware="scanningarrays" />
+      <ware ware="shieldcomponents" />
+      <ware ware="silicon" />
+      <ware ware="siliconwafers" />
+      <ware ware="smartchips" />
+      <ware ware="sojabeans" />
+      <ware ware="sojahusk" />
+      <ware ware="spacefuel" />
+      <ware ware="spaceweed" />
+      <ware ware="spices" />
+      <ware ware="sunriseflowers" />
+      <ware ware="superfluidcoolant" />
+      <ware ware="swampplant" />
+      <ware ware="teladianium" />
+      <ware ware="turretcomponents" />
+      <ware ware="water" />
+      <ware ware="weaponcomponents" />
+      <ware ware="wheat" />
+    </wares>
+  </basket>
+
+  <basket id="all_container" name="All Container Wares" description="Basket for all container wares">
+    <wares>
+      <ware ware="advancedelectronics" />
+      <ware ware="antimattercells" />
+      <ware ware="antimatterconverters" />
+      <ware ware="advancedcomposites" />
+      <ware ware="claytronics" />
+      <ware ware="dronecomponents" />
+      <ware ware="energycells" />
+      <ware ware="engineparts" />
+      <ware ware="fieldcoils" />
+      <ware ware="foodrations" />
+      <ware ware="graphene" />
+      <ware ware="hullparts" />
+      <ware ware="majadust" />
+      <ware ware="majasnails" />
+      <ware ware="meat" />
+      <ware ware="medicalsupplies" />
+      <ware ware="consumergoods" />
+      <ware ware="microchips" />
+      <ware ware="missilecomponents" />
+      <ware ware="plasmaconductors" />
+      <ware ware="quantumtubes" />
+      <ware ware="refinedmetals" />
+      <ware ware="scanningarrays" />
+      <ware ware="shieldcomponents" />
+      <ware ware="siliconwafers" />
+      <ware ware="smartchips" />
+      <ware ware="sojabeans" />
+      <ware ware="sojahusk" />
+      <ware ware="spices" />
+      <ware ware="sunriseflowers" />
+      <ware ware="superfluidcoolant" />
+      <ware ware="swampplant" />
+      <ware ware="teladianium" />
+      <ware ware="turretcomponents" />
+      <ware ware="weaponcomponents" />
+      <ware ware="wheat" />
+    </wares>
+  </basket>
+</baskets>

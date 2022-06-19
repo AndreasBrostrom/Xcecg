@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<groups>
+  <!-- Universal Production Module Groups -->
+  <group name="prod_arg_consumergoods">
+    <select macro="prod_arg_consumergoods_macro" />
+  </group>
+
+  <group name="prod_par_consumergoods">
+    <select macro="prod_par_consumergoods_macro" />
+  </group>
+
+  <group name="prod_tel_consumergoods">
+    <select macro="prod_tel_consumergoods_macro" />
+  </group>
+
+</groups>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <entry name="prod_gen_consumergoods" value="assets\structures\production\prod_gen_consumergoods"/>
+  <!-- <entry name="props_adsign_gen_consumergoods" value="assets\props\Adsigns\props_adsign_gen_consumergoods"/> -->
+  <entry name="ware_consumergoods" value="assets\wares\ware_consumergoods"/>
+</index>

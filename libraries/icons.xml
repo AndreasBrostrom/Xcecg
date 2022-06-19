@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE icons SYSTEM "icons.dtd" >
+<icons> 
+  <!-- ware icons -->
+  <icon name="ware_consumergoods" texture="assets\fx\gui\textures\wares\ware_consumergoods.tga" height="128" width="128"></icon>
+</icons>

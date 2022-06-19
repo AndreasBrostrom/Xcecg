@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="libraries.xsd">
+  <!-- Universal Production Modules -->
+
+  <module id="prod_arg_consumergoods" group="prod_arg_consumergoods">
+    <!-- need Argon version due to different build method using Wheat -->
+    <category ware="consumergoods" tags="[production, module]" race="argon" faction="[argon, antigone, hatikvah]" />
+    <compatibilities>
+      <production ware="consumergoods" chance="65" />
+    </compatibilities>
+  </module>
+
+  <module id="prod_par_consumergoods" group="prod_par_consumergoods">
+    <!-- need Paranid version due to different build method using Soja Beans -->
+    <category ware="consumergoods" tags="[production, module]" race="paranid" faction="[paranid, holyorder, trinity, alliance, buccaneers]" />
+    <compatibilities>
+      <production ware="consumergoods" chance="65" />
+    </compatibilities>
+  </module>
+
+  <module id="prod_tel_consumergoods" group="prod_tel_consumergoods">
+    <!-- need Teladi version due to different build method using Sunrise Flowers -->
+    <category ware="consumergoods" tags="[production, module]" race="teladi" faction="[teladi, ministry, scaleplate]" />
+    <compatibilities>
+      <production ware="consumergoods" chance="65" />
+    </compatibilities>
+  </module>
+</modules>
